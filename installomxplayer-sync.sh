@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 sudo su
 apt-get remove omxplayer
 rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
