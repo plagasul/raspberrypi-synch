@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-sudo su
+#sudo su
 apt-get remove omxplayer
 rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
 apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus
