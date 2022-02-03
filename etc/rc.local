@@ -16,7 +16,7 @@
 # Print the IP address
 _IP=$(hostname -I) || true
 if [ "$_IP" ]; then
-  printf "My IP address is %s\n" "$_IP"
+  echo "My IP address is %s\n" "$_IP"
 fi
 sleep 5
 cd /home/pi
@@ -34,5 +34,5 @@ fi
 sleep 5
 
 #play 
-omxplayer-sync -luv -b --no-osd video.mp4
+omxplayer-sync -muv -b --no-osd video.mp4
 exit 0
