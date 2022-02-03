@@ -5,8 +5,13 @@ Save file in your local system as this git estructure
 #add a file named ssh in /boot to activate ssh service
 
 ## Requirements
--Legacy version of raspbian
+- Legacy version of raspbian
+- omcplayer-sync
+- usbmount
 
--usbmount
+## Instructions
+- Install legacy raspbian version
+- execute installomxplayer-sync.sh
+- execute INSTALL.sh
 
-Install: sudo apt install usbmount
+- Modify master player with attrbutes, see etc/rc.local for more info, default is slave
