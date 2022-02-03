@@ -1,4 +1,4 @@
-# CODE FOR CHILD PLAYER
+# CODE FOR CHILD PLAYER, change -muv for master
 # https://www.khm.de/~sievers/net/omxplayer-sync.html
 #
 #
@@ -22,5 +22,19 @@ if [ "$_IP" ]; then
 fi
 sleep 5
 cd /home/pi
-omxplayer-sync -muv -b --no-osd flaixos.mp4
+
+#copy any mp4 file found in external drives 
+video=$(find /media -type f -name "*.mp4" | head -n 1)
+if [ ! -z "$video" ]
+then
+    echo "Found video" $video
+cp "$video" "./video.mp4"
+else
+    echo "No videos found"
+fi
+
+sleep 5
+
+#play 
+omxplayer-sync -luv -b --no-osd video.mp4
 exit 0
