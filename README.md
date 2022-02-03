@@ -3,8 +3,8 @@
 Autoplays videos in sync with other raspberrys on the same network, works with direct ethernet conexion between 2 raspberrys or more in a router/hub
 Use ethernet cables to ensure stability
 
-
-Save file in your local system as this git estructure
+If the system detects any external drives connected on boot it will copy the first .mp4 file to the home directory and use it for playing as video. (It only needs to be done once or everytime you need to replace the video file to be played)
+Otherwise just copy your video file in home folder as "video.mp4"
 
 #add a file named ssh in /boot to activate ssh service
 
