@@ -1,7 +1,3 @@
-# CODE FOR CHILD PLAYER, change -muv for master
-# https://www.khm.de/~sievers/net/omxplayer-sync.html
-#
-#
 #!/bin/sh -e
 #
 # rc.local
@@ -14,6 +10,8 @@
 # bits.
 #
 # By default this script does nothing.
+# CODE FOR CHILD PLAYER, change -muv for master
+# https://www.khm.de/~sievers/net/omxplayer-sync.html
 
 # Print the IP address
 _IP=$(hostname -I) || true
@@ -27,10 +25,10 @@ cd /home/pi
 video=$(find /media -type f -name "*.mp4" | head -n 1)
 if [ ! -z "$video" ]
 then
-    echo "Found video" $video
+echo "Found video" $video
 cp "$video" "./video.mp4"
 else
-    echo "No videos found"
+echo "No videos found"
 fi
 
 sleep 5
