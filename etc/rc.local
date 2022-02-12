@@ -27,12 +27,13 @@ video=$(find /media -type f -name "*.mp4" | head -n 1)
 if [ ! -z "$video" ]
 then
 echo "Found video" $video
+echo "coping to local storage"
 cp "$video" "./video.mp4"
 else
-echo "No videos found"
+echo "No videos found in external drives"
 fi
 
-sleep 5
+sleep 25
 
 #play 
 omxplayer-sync -luv -b --no-osd video.mp4
