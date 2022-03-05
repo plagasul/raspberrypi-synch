@@ -11,5 +11,5 @@ sudo chmod 0755 /usr/bin/omxplayer-sync
 # Download twitch video for sync testing
 wget http://twitch-event-engineering-public.s3.amazonaws.com/sync-footage/Sync-Footage-V1-H264.mp4
 
-# I guess we need to rename it to video.mp4 so it works straightaway with line 39 of rc.local
-mv Sync-Footage-V1-H264.mp4 video.mp4
+# Assuming this is a cloned repo, we rename the video and move it to ~
+mv Sync-Footage-V1-H264.mp4 ../video.mp4
