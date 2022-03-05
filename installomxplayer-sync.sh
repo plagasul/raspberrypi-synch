@@ -8,4 +8,4 @@ sudo apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus
 #sudo apt install omxplayer
 wget -O /usr/bin/omxplayer-sync https://github.com/turingmachine/omxplayer-sync/raw/master/omxplayer-sync
 chmod 0755 /usr/bin/omxplayer-sync
-wget https://github.com/turingmachine/omxplayer-sync/raw/master/synctest.mp4
+wget http://twitch-event-engineering-public.s3.amazonaws.com/sync-footage/Sync-Footage-V1-H264.mp4
