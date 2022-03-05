@@ -36,5 +36,5 @@ fi
 sleep 25
 
 #play 
-omxplayer-sync -luv -b --no-osd video.mp4
+omxplayer-sync -muv -b --no-osd video.mp4
 exit 0
