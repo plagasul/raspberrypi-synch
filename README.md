@@ -1,6 +1,6 @@
 # raspberrypi-synch
 
-Note: This fork should work with a Rpi4
+**This fork should work with Rpi4 model B**
 
 Autoplays videos in sync with other raspberrys on the same network, works with direct ethernet conexion between 2 raspberrys or more in a router/hub
 Use ethernet cables to ensure stability
@@ -12,7 +12,7 @@ default config is slave player mode, edit rc.local to make player as the master 
 
 ## Requirements
 - Legacy version of raspbian
-- omcplayer-sync
+- omxplayer-sync
 - usbmount
 
 ## Install Instructions
